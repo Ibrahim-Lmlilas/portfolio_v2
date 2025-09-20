@@ -2,6 +2,7 @@ import {
   algorithms,
   devnotes,
   oscs,
+  classicGames,
 } from "../assets";
 
 export const navLinks = [
@@ -10,12 +11,16 @@ export const navLinks = [
     title: "Hero",
   },
   {
-    id: "portfolio",
-    title: "Portfolio",
+    id: "skills",
+    title: "Skills",
   },
   {
-    id: "experience",
-    title: "Experience",
+    id: "portfolio",
+    title: "Projects",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -68,21 +73,21 @@ const experiences = [
 
 const portfolio = [
   {
-    name: "Open Source Computer Science Repo",
+    name: "Classic Games Website",
     description:
-      "A GitHub repo with over 17,000 stars containing a curated list of free online courses from reputable universities that satisfy undergraduate computer science requirements.",
-    image: oscs,
+      "A collection of classic games including Snake, Tic Tac Toe, Tetris and more. Built with modern web technologies for nostalgic gaming experience.",
+    image: classicGames,
   },
   {
-    name: "Dev Notes",
+    name: "Quiz",
     description:
-      "A newsletter with over 6,000 readers made for software developers to keep up with this rapidly evolving industry, with a sister platform in progress.",
+      "A simple and interactive quiz to test your programming knowledge. Choose between HTML, CSS, or JavaScript topics and answer 10 questions with single or multiple correct answers.",
     image: devnotes,
   },
   {
-    name: "Visually Understanding Algorithms",
+    name: "Job Dating Platform",
     description:
-      "A showcase of animated algorithms coded using TypeScript, with the video garnering over 400,000 views.",
+      "A job dating site. Built with MVC architecture, PHP, PostgreSQL, and Twig templates. It features an admin interface for company management, a job posting system, and a student portal.",
     image: algorithms,
   },
 ];

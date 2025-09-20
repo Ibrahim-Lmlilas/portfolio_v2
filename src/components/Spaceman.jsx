@@ -24,7 +24,7 @@ const SpacemanCanvas = ({ scrollContainer }) => {
   const [rotationX, setRotationX] = useState(0);
   const [rotationY, setRotationY] = useState(0);
   const [scale, setScale] = useState([2, 2, 2]);
-  const [position, setPosition] = useState([0.2, -0.7, 0]);
+  const [position, setPosition] = useState([0.4, -8, 0]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,19 +38,19 @@ const SpacemanCanvas = ({ scrollContainer }) => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         setScale([1, 1, 1]);
-        setPosition([0.2, -0.1, 0]);
+        setPosition([0.1, 0.2, 0]);
       } else if (window.innerWidth < 1024) {
         setScale([1.33, 1.33, 1.33]);
-        setPosition([0.2, -0.3, 0]);
+        setPosition([0.1, 0, 0]);
       } else if (window.innerWidth < 1280) {
         setScale([1.5, 1.5, 1.5]);
-        setPosition([0.2, -0.4, 0]);
+        setPosition([0.1, -0.1, 0]);
       } else if (window.innerWidth < 1536) {
         setScale([1.66, 1.66, 1.66]);
-        setPosition([0.2, -0.5, 0]);
+        setPosition([0.1, -0.2, 0]);
       } else {
         setScale([2, 2, 2]);
-        setPosition([0.2, -0.7, 0]);
+        setPosition([0.1, -0.4, 0]);
       }
     };
 
